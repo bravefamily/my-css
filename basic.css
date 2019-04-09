@@ -1,0 +1,171 @@
+/* The MIT License */
+.dropzone,
+.dropzone *,
+.dropzone-previews,
+.dropzone-previews * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dropzone {
+    position: relative;
+    background: rgba(0,0,0,0.02);
+    padding: 0px;
+}
+.dropzone.dz-clickable {
+    cursor: pointer;
+}
+.dropzone.dz-clickable .dz-message,
+.dropzone.dz-clickable .dz-message span {
+    cursor: pointer;
+}
+.dropzone.dz-clickable * {
+    cursor: default;
+}
+.dropzone .dz-message {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+.dropzone.dz-drag-hover {
+    border-color: rgba(0,0,0,0.15);
+    background: rgba(0,0,0,0.04);
+}
+.dropzone.dz-started .dz-message {
+    display: none;
+}
+.dz-preview,
+.dropzone-previews .dz-preview {
+    margin: 0px;
+    vertical-align: top;
+    text-align: center;
+}
+.dz-preview.dz-file-preview [data-dz-thumbnail],
+.dropzone-previews .dz-preview.dz-file-preview [data-dz-thumbnail] {
+    display: none;
+}
+
+.dz-preview  .dz-filename,
+.dropzone-previews .dz-preview .dz-filename {
+    overflow: hidden;
+    height: 30px;
+    text-align: right !important;
+}
+
+.dz-preview.dz-error .dz-error-mark,
+.dropzone-previews .dz-preview.dz-error .dz-error-mark {
+    display: block;
+}
+.dz-preview.dz-success .dz-success-mark,
+.dropzone-previews .dz-preview.dz-success .dz-success-mark {
+    display: block;
+}
+
+.dz-preview.dz-processing .dz-progress,
+.dropzone-previews .dz-preview.dz-processing .dz-progress {
+    display: block;
+}
+.dz-preview .dz-error-message,
+.dropzone-previews .dz-preview .dz-error-message {
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    background: rgba(245,245,245,0.8);
+    padding: 8px 10px;
+    color: #800;
+    min-width: 140px;
+    max-width: 500px;
+    z-index: 500;
+    font-size:10px;  
+}
+.dz-preview:hover.dz-error .dz-error-message,
+.dropzone-previews .dz-preview:hover.dz-error .dz-error-message {
+    display: block;
+}
+
+
+
+
+.dropzone{
+    padding:10px;
+    text-align: center;
+    font-size:14px;
+    background: transparent;
+    margin:0px;
+}
+
+.dropzone .single_preview{
+    padding:0px;
+    margin-bottom:15px;   
+}
+
+.show_postdropzone .previews{
+    border:red;
+}
+
+.dropzone_new{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;  
+    padding: 15px 6px 6px 6px !important;
+    width:100%;
+    margin:0 0 15px 0;
+    height: 65px;
+    color: #969696;
+    border: 2px dashed #E4E4E4 !important;
+    background: #f8f8f8;
+    font-size:20px;
+    cursor: pointer;
+}  
+
+
+
+.dropzone_icon{
+    font-size:20px;
+}
+
+.dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark,
+.dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark {
+    display: none;
+    font-size: inherit; 
+    width:30px;
+    height:30px;      
+    margin:0px auto;
+    padding-top:4px;
+    line-height: 22px;
+    margin-left:10px;  
+} 
+
+
+
+.dropzone_delete{
+    font-size:12px;
+}
+
+.dropzone_delete .dz-remove{
+    margin-top: 4px;
+}
+
+
+
+.dz-preview .dz-progress,
+.dropzone-previews .dz-preview .dz-progress {
+    height: 6px;
+    background: #d7d7d7;
+    display: none;
+    width: 90px;
+    margin: 11px auto 0 auto;    
+}
+
+.dz-preview .dz-progress .dz-upload,
+.dropzone-previews .dz-preview .dz-progress .dz-upload {
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-color: #8cc657;
+    height:6px;
+}
